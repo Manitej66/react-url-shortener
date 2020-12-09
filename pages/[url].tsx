@@ -5,7 +5,7 @@ const Url = () => {
   return null;
 };
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context: any) => {
   const { url } = context.params;
 
   const home =
