@@ -6,7 +6,8 @@ const index = () => {
   const [url, setUrl] = useState<string>("");
   const [surl, setsUrl] = useState<string>("");
   const [load, setLoad] = useState<boolean>(false);
-  const home = process.env.NODE_ENV === "development" ? "localhost:3000" : "";
+  const home =
+    process.env.NODE_ENV === "development" ? "localhost:3000" : "zf.vercel.app";
 
   const getShortUrl = async () => {
     setLoad(true);

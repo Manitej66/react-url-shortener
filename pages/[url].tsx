@@ -9,9 +9,10 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
   const { url } = context.params;
 
   const home =
-    process.env.NODE_ENV === "development" ? "http://localhost:3000" : "";
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://zf.vercel.app";
 
-  console.log(home);
   const info = await Axios.post(`${home}/api/getShortUrl`, {
     url: url,
   });
