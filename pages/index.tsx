@@ -1,7 +1,6 @@
 import Axios from "axios";
 import React, { useState } from "react";
 import Head from "next/head";
-
 const index = () => {
   const [url, setUrl] = useState<string>("");
   const [surl, setsUrl] = useState<string>("");
